@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Operators</title>
+    <script language="JavaScript">
+        function add() {
+            var x = 0,
+                y = 0,
+                z = 0;
+
+            x = parseInt(document.f.num1.value);
+            y = parseInt(document.f.num2.value);
+            z = x + y
+            document.f.ans.value = z
+        }
+
+        function sub() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x - y;
+            document.f.ans.value = z
+        }
+
+        function mult() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x * y;
+            document.f.ans.value = z
+        }
+
+        function divr() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x % y;
+            document.f.ans.value = z
+        }
+
+        function divq() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x / y;
+            document.f.ans.value = z
+        }
+
+        function exponent() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x ** y;
+            document.f.ans.value = z
+        }
+
+        function incre() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = x + 1;
+            document.f.ans.value = y
+        }
+
+        function decre() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = x - 1;
+            document.f.ans.value = y
+        }
+
+        function pleq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x += y;
+            document.f.ans.value = x
+        }
+
+        function subeq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x -= y;
+            document.f.ans.value = x
+        }
+
+        function multeq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x *= y;
+            document.f.ans.value = x
+        }
+
+        function divqeq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x /= y
+            document.f.ans.value = x
+        }
+
+        function divreq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x %= y
+            document.f.ans.value = x
+        }
+
+        function exeq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            x **= y
+            document.f.ans.value = x
+        }
+
+        function deq() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            if (x == y) {
+                document.f.ans.value = "value and type Equal"
+            } else {
+                document.f.ans.value = "value and type not Equal"
+            }
+        }
+
+        function gol() {
+            var x = 0;
+            var y = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            if (x > y) {
+                document.f.ans.value = "Greater"
+            } else {
+                document.f.ans.value = "smaller"
+            }
+        }
+
+        function andop() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x && y;
+            document.f.ans.value = z
+        }
+
+        function orop() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x || y;
+            document.f.ans.value = z
+        }
+
+        function notop() {
+            var x = 0;
+            var y = 0;
+            var z = 0;
+            x = parseFloat(document.f.num1.value);
+            y = parseFloat(document.f.num2.value);
+            z = x != y;
+            document.f.ans.value = z
+        }
+    </script>
+
+</head>
+
+<body background-image=url( "ant.jpg")>
+    <h1 align="center" border-width="inset">Operators in JavaScript </h1>
+    <form name="f" id="f">
+        <table align="center" border="10pt" border-color="red" width="40%" height="10%" cellspacing="10pt" cellpadding="10pt" bgcolor="#00ffff" class="inset">
+            <tr>
+                <th>Enter number 1 <input type="text" size="10pt" id="num1" name="num1"> </th>
+
+            <th>Enter number 2 <input type="text" size="10pt" id="num2" name="num2"> </th>
+            </tr>
+        </table>
+        <br>
+        <table align="center" border="20pt" width="80%" height="50%" cellspacing="10pt" cellpadding="10pt" bgcolor="#00ffff" class="g">
+            <tr>
+                <td><input type="button" value="+" onclick="add()"> </td>
+                <td><input type="button" value="-" onclick="sub()"> </td>
+                <td><input type="button" value="*" onclick="mult()"> </td>
+                <td><input type="button" value="%" onclick="divr()"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="/" onclick="divq()"> </td>
+                <td><input type="button" value="**" onclick="exponent()"> </td>
+                <td><input type="button" value="++" onclick="incre()"> </td>
+                <td><input type="button" value="--" onclick="decre()"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+=" onclick="pleq()"> </td>
+                <td><input type="button" value="-=" onclick="subeq()"> </td>
+                <td><input type="button" value="*=" onclick="multeq()"> </td>
+                <td><input type="button" value="/=" onclick="divqeq()"> </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="%=" onclick="divreq()"> </td>
+                <td><input type="button" value="**=" onclick="exeq()"> </td>
+                <td><input type="button" value="Equal Or Not" onclick="deq()"> </td>
+                <td>
+                    <a><input type="button" value="Greater or Not" onclick="gol()"></a>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="AND" onclick="andop()"> </td>
+                <td><input type="button" value="OR" onclick="orop()"> </td>
+                <td><input type="button" value="NOT" onclick="notop()"> </td>
+            </tr>
+        </table>
+        <br>
+        <table border="10pt" align="center" bgcolor="#00ffff">
+            <tr>
+                <td><input type="text" size="10" id="ans" name="ans" readonly="readonly"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

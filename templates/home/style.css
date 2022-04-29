@@ -1,0 +1,21 @@
+    h1 {
+        font-style: italic;
+        color: red;
+    }
+    
+    body {
+        background-image: url(maths.jpg);
+    }
+    
+    table {
+        border-width: groove;
+        border-color: ;
+    }
+    
+    .inset {
+        border-width: inset;
+    }
+    
+    .outset {
+        border-width: outset;
+    }
